@@ -1,0 +1,90 @@
+.accordion {
+  width: 100%;
+  margin: 0 auto 50px auto;
+  display: flex;
+
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 1024px) {
+    grid-area: accordion;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  & & {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__element:last-child {
+    margin-bottom: 0;
+  }
+
+  &__element {
+    position: relative;
+
+    @media (max-width: 767px) {
+      padding: 20px 25px 20px 25px;
+      border-bottom: 1px solid #F8FDFF;
+    }
+
+    /*&::before {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: -30px;
+      content: "";
+      height: 1px;
+      width: 125%;
+      background-image: url("data:image/svg+xml,%3Csvg width='320' height='1' viewBox='0 0 320 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline y1='0.5' x2='320' y2='0.5' stroke='%23F8FDFF' stroke-opacity='0.7'/%3E%3C/svg%3E%0A");
+
+      @media (max-width: 767px) {
+        display: block;
+      }
+    }*/
+  }
+
+  &__icon-open {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  &__icon-close {
+    display: none;
+  }
+
+  &__element.is-active &__icon-open {
+    display: none;
+  }
+
+  &__element.is-active &__icon-close {
+
+    @media (max-width: 767px) {
+      display: block;
+    }
+  }
+
+  &__button {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    cursor: default;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767px) {
+      cursor: pointer;
+    }
+  }
+
+  &__wrapper {
+    padding: 10px;
+  }
+}

@@ -1,0 +1,30 @@
+.footer-menu {
+  position: relative;
+  color: $color-default-white;
+
+  @media (max-width: 1023px) {
+    grid-area: menu;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.footer-menu__list {
+  column-count: 2;
+  column-width: auto;
+
+  @media (max-width: 1023px) {
+    column-count: 1;
+  }
+}
+
+.footer-menu__link {
+  color: $color-default-white;
+}
+
+.footer-menu__item:not(:last-child) {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,29 @@
+.auto-resize-textarea {
+  margin-bottom: 20px;
+
+  textarea {
+    font-size: 16px;
+    line-height: 21px;
+    padding: 25px 15px;
+    width: 100%;
+    border: none;
+    border: 1px solid $deep-sky-blue;
+    border-radius: 3px;
+    outline: none;
+    transition: border-color 0.3s ease;
+
+    background-color: $swamp;
+
+    &::placeholder {
+      color: $color-default-white;
+    }
+
+    &:hover {
+      border: 1px solid $black-pearl;
+    }
+
+    &:focus {
+      border: 1px solid $black-pearl;
+    }
+  }
+}

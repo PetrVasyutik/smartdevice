@@ -1,0 +1,111 @@
+.feedback {
+  position: relative;
+  background-color: $deep-sky-blue;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -95px;
+    left: -140px;
+    width: 950px;
+    height: 1265px;
+    background-image: url(../img/polygon1.png);
+    background-repeat: no-repeat;
+
+    @media (max-width: 1023px) {
+      display: none;
+    }
+  }
+}
+
+.feedback__wrapper {
+  padding-top: 170px;
+  padding-bottom: 250px;
+  display: flex;
+  gap: 115px;
+
+  @media (max-width: 1023px) {
+    padding-top: 50px;
+    padding-bottom: 125px;
+  }
+
+  @media (max-width: 767px) {
+    padding-bottom: 90px;
+  }
+}
+
+.feedback__image {
+  z-index: 10;
+  max-width: 50%;
+  flex-basis: 50%;
+
+  @media (max-width: 1023px) {
+    display: none;
+    max-width: 0;
+    flex-basis: 0;
+  }
+}
+
+.feedback__title {
+  color: $color-default-white;
+  margin-bottom: 35px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 15px;
+  }
+}
+
+.feedback__subtitle {
+  margin-top: 15px;
+}
+
+.feedback__form {
+  max-width: 50%;
+  flex-basis: 50%;
+
+  @media (max-width: 1023px) {
+
+    max-width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+.feedback__form-container {
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &--modal {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.feedback__btn-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 35px;
+  gap: 50px;
+  align‑items: center;
+
+  @media (max-width: 1023px) {
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 85px;
+  }
+
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    gap: 25px;
+  }
+
+  &--modal {
+    margin-top: 10px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
