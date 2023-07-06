@@ -620,7 +620,7 @@ h4 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 410px 0 350px;
+  padding: 0 400px 0 350px;
 }
 @media (max-width: 1439px) {
   .container {
@@ -755,10 +755,14 @@ h4 {
   }
 }
 
+.header__logo {
+  margin-right: 20px;
+}
+
 .header-contacts__email {
   position: relative;
   color: #ffffff;
-  margin-right: 140px;
+  margin-right: 100px;
 }
 @media (max-width: 1024px) {
   .header-contacts__email {
@@ -1047,9 +1051,9 @@ h4 {
 }
 
 .advantages__item {
-  max-width: 48%;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  max-width: 47%;
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
   border: 1px solid #EBEBEB;
   border-left: 5px solid #00B2FF;
 }
@@ -1078,10 +1082,10 @@ h4 {
 .advantage:hover .advantage__title {
   color: #ffffff;
 }
-.advantage:hover .advantages__icon {
+.advantage:hover .advantage__icon {
   color: #ffffff;
 }
-.advantage:hover .advantages__description {
+.advantage:hover .advantage__description {
   color: #ffffff;
 }
 @media (max-width: 1023px) {
