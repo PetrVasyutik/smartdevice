@@ -16,7 +16,12 @@
       display: none;
     }
   }
+
+  & .container {
+    position: relative;
+  }
 }
+
 
 .feedback__wrapper {
   padding-top: 170px;
