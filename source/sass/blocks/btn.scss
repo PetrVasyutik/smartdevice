@@ -7,13 +7,10 @@
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
-
   color: $color-default-white;
-
   background-color: $black-pearl;
   border: none;
   cursor: pointer;
-
   transition: opacity $trans-default;
 
   &--border {
@@ -45,7 +42,6 @@
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 
@@ -54,9 +50,7 @@
   }
 
   &--none {
-
     @media (max-width: 1023px) {
-
       display: none;
     }
   }

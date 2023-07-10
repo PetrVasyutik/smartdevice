@@ -1,18 +1,18 @@
 .main-block {
   background-color: $black-pearl;
   color: $color-default-white;
-  background-image: url(../img/fonmainunit.jpg);
+  background-image: url("../img/fonmainunit.jpg");
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
-    background-image: url(../img/fonmainunit@2x.png);
+    background-image: url("../img/fonmainunit@2x.png");
     background-size: cover;
     background-repeat: no-repeat;
   }
 }
 
 .main-block__transparent {
-  background-image: url(../img/opacitymainunit.png);
+  background-image: url("../img/opacitymainunit.png");
 }
 
 .main-block__wrapper {

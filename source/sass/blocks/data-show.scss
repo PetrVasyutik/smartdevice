@@ -1,15 +1,4 @@
-.show-more__text {
-  display: none;
-}
-
-[data-show="parent"].is-open .show-more__text {
+.show-more.is-open .show-more__text {
   display: block;
   transition: all 1s ease;
-
-}
-
-.show-more {
-  display: flex;
-  flex-direction: column-reverse;
-
 }

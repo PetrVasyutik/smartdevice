@@ -2,15 +2,11 @@
   $self: &;
   font-size: 14px;
   cursor: pointer;
-  display: block;
   padding-top: 10px;
+  display: inline-flex;
+  align-items: center;
 
-  &__label {
-    display: inline-flex;
-    align-items: center;
-  }
-
-  &__input {
+  [type="checkbox"] {
     display: none;
   }
 
@@ -25,13 +21,13 @@
     border: 1px solid $color-default-white;
     border-radius: 2px;
 
-    #{$self}__input:checked+& {
+    [type="checkbox"]:checked + & {
       border-color: $color-default-white;
 
       &::after {
         top: 50%;
         left: 50%;
-        content: '';
+        content: "";
         width: 60%;
         height: 60%;
         font-size: 8px;
