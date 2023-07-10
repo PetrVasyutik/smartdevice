@@ -45,6 +45,21 @@
     }
   }
 
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &__btn-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: center;
+  }
+
+
   &__overlay {
     position: absolute;
     top: 0;

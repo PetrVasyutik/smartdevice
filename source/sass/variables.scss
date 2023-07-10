@@ -11,10 +11,11 @@ $color-transparent: rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
-$deep-sky-blue: #00B2FF;
+$deep-sky-blue: #00b2ff;
 $black-pearl: #041827;
-$whisper: #EBEBEB;
-$swamp: #04142726;
+$whisper: #ebebeb;
+$swamp: #142726;
+$alice-blue: #f8fdff;
 
 // Gradient
 
@@ -29,16 +30,16 @@ $fz-default: 16px;
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble: "Rouble",
-"Arial",
-sans-serif;
+  "Arial",
+  sans-serif;
 
 $ff-placeholder: "PT Mono",
-"Arial",
-sans-serif;
+  "Arial",
+  sans-serif;
 
 $ff-title: "Roboto Condensed",
-"Arial",
-sans-serif;
+  "Arial",
+  sans-serif;
 
 // Animation
 // ---------------------------------

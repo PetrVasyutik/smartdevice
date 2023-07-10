@@ -2,14 +2,12 @@
   background-color: $black-pearl;
   padding-top: 50px;
 
-
   @media (max-width: 767px) {
     padding-top: 35px;
   }
 }
 
 .footer .container {
-
   @media (max-width: 767px) {
     padding: 0;
   }
@@ -28,7 +26,7 @@
     grid-template-rows: 90px 1fr;
     grid-template-areas:
       "logo logo"
-      "accordion accordion"
+      "accordion accordion";
   }
 
   @media (max-width: 767px) {
@@ -53,6 +51,6 @@
     align-items: center;
     gap: 15px;
     padding-bottom: 25px;
-    border-bottom: 1px solid #F8FDFF;
+    border-bottom: 1px solid $alice-blue;
   }
 }

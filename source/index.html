@@ -11,9 +11,9 @@
   <link rel="preload" href="./fonts/Roboto-Medium.woff2" as="font">
   <link rel="preload" href="./fonts/RobotoCondensed-Regular.woff2" as="font">
   <link rel="preload" href="./fonts/RobotoCondensed-Bold.woff2" as="font">
-  <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180.png">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="apple-touch-icon" href="./img/favicons/apple-icon-180.png">
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
@@ -112,7 +112,9 @@
               <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>
               <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
               <div class="show-more" data-show="parent">
-                <p><button class="show-more__btn btn btn--small" data-show="button">Подробнее</button></p>
+                <p>
+                  <button class="show-more__btn btn btn--small" data-show="button">Подробнее</button>
+                </p>
                 <div class="show-more__text">
                   <p>Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
                   <p>Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
@@ -131,8 +133,9 @@
             <div class="services__item">
               <a href="#" class="service">
                 <picture>
-                  <source media="(max-width: 768px)" srcset="./img/foncard1mobile.jpg 1px, ./img/foncard1mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)" srcset="./img/foncard1tablet.jpg 1px, ./img/foncard1tablet@2x.jpg 2x">
+                  <source media="(max-width: 768px)" srcset="./img/foncard1mobile.jpg 1x, ./img/foncard1mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="./img/foncard1tablet.jpg 1x, ./img/foncard1tablet@2x.jpg 2x">
+                  <source srcset="./img/foncard1.webp" type="image/webp">
                   <img src="./img/foncard1.jpg" srcset="./img/foncard1@2x.jpg 2x" alt="Печатная плата">
                 </picture>
                 <div class="service__wrapper">
@@ -148,8 +151,9 @@
             <div class="services__item">
               <a href="#" class="service">
                 <picture>
-                  <source media="(max-width: 768px)" srcset="./img/foncard2mobile.jpg 1px, ./img/foncard2mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)" srcset="./img/foncard2tablet.jpg 1px, ./img/foncard2tablet@2x.jpg 2x">
+                  <source media="(max-width: 768px)" srcset="./img/foncard2mobile.jpg 1x, ./img/foncard2mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="./img/foncard2tablet.jpg 1x, ./img/foncard2tablet@2x.jpg 2x">
+                  <source srcset="./img/foncard2.webp" type="image/webp">
                   <img src="./img/foncard2.jpg" srcset="./img/foncard2@2x.jpg 2x" alt="Печатная плата">
                 </picture>
                 <div class="service__wrapper">
@@ -165,8 +169,9 @@
             <div class="services__item">
               <a href="#" class="service">
                 <picture>
-                  <source media="(max-width: 768px)" srcset="./img/foncard3mobile.jpg 1px, ./img/foncard3mobile@2x.jpg 2x">
-                  <source media="(max-width: 1023px)" srcset="./img/foncard3tablet.jpg 1px, ./img/foncard3tablet@2x.jpg 2x">
+                  <source media="(max-width: 768px)" srcset="./img/foncard3mobile.jpg 1x, ./img/foncard3mobile@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="./img/foncard3tablet.jpg 1x, ./img/foncard3tablet@2x.jpg 2x">
+                  <source srcset="./img/foncard3.webp" type="image/webp">
                   <img src="./img/foncard3.jpg" srcset="./img/foncard3@2x.jpg 2x" alt="Печатная плата">
                 </picture>
                 <div class="service__wrapper">
@@ -186,7 +191,10 @@
         <div class="container">
           <div class="feedback__wrapper">
             <div class="feedback__image">
-              <img src="./img/paper_airplane.png" srcset="./img/paper_airplane@2px.png 2px" alt="Бумажный самолет" width="510" height="285">
+              <picture>
+                <source srcset="./img/paper_airplane.webp" type="image/webp">
+                <img src="./img/paper_airplane.png" srcset="./img/paper_airplane@2px.png 2x" alt="Бумажный самолет" width="510" height="285">
+              </picture>
             </div>
             <div class="feedback__form">
               <div class="feedback__title">
@@ -196,28 +204,26 @@
               <form method="post">
                 <div class="feedback__form-container">
                   <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
-                    <label><span class="custom-input__label"></span>
-                      <input type="text" name="user-name-1" placeholder="Имя" />
+                    <label>
+                      <input type="text" name="user-name-1" aria-label="name input" placeholder="Имя" />
                     </label>
                   </div>
                   <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
-                    <label><span class="custom-input__label"></span>
+                    <label>
                       <input type="tel" name="user-example" aria-label="tel input" placeholder="Телефон" />
                     </label>
                   </div>
                 </div>
                 <div class="auto-resize-textarea">
-                  <textarea name="example" rows="5" aria-label="textarea" placeholder="Ваш вопрос"></textarea>
+                  <textarea name="example" rows="5" aria-label="Ваш вопрос" placeholder="Ваш вопрос"></textarea>
                 </div>
                 <div class="feedback__btn-container">
                   <button class="btn btn--black" type="submit">Задать вопрос</button>
                   <label class="checkbox">
-                    <div class="checkbox__label">
-                      <input type="checkbox" class="checkbox__input" checked="checked" value="3" />
-                      <span class="checkbox__mark"></span>
-                      <div class="checkbox__text">
-                        Я согласен на обработку персональных данных
-                      </div>
+                    <input type="checkbox" checked="checked" value="3" />
+                    <span class="checkbox__mark"></span>
+                    <div class="checkbox__text">
+                      Я согласен на обработку персональных данных
                     </div>
                   </label>
                 </div>
@@ -319,13 +325,19 @@
                         <address>г. Мытищи, Олимпийский проспект, д. 10</address>
                       </li>
                       <li class="footer-contacts__item">
-                        <a href="tel:+74955894050" class="footer-contacts__link"><span>+7 (495) 589-40-50</span></a>
+                        <a class="footer-contacts__link" href="tel:+74955894050">
+                          <span>+7 (495) 589-40-50</span>
+                        </a>
                       </li>
                       <li class="footer-contacts__item">
-                        <a href="tel:+79255895829" class="footer-contacts__link"><span>+7 (925) 589-58-29</span></a>
+                        <a class="footer-contacts__link" href="tel:+79255895829">
+                          <span>+7 (925) 589-58-29</span>
+                        </a>
                       </li>
                       <li class="footer-contacts__item">
-                        <a href="tel:+79253647813" class="footer-contacts__link"><span>+7 (925) 364-78-13</span></a>
+                        <a class="footer-contacts__link" href="tel:+79253647813">
+                          <span>+7 (925) 364-78-13</span>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -349,30 +361,28 @@
         <div class="modal__title">Закажите звонок</div>
         <div class="modal__subtitle">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</div>
         <form method="post">
-          <div class="feedback__form-container feedback__form-container--modal">
+          <div class="modal__form-container">
             <div class="custom-input custom-input--modal" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
-              <label><span class="custom-input__label"></span>
-                <input data-focus type="text" name="user-name-1" placeholder="Имя" />
+              <label>
+                <input data-focus type="text" name="user-name-1" aria-label="name input" placeholder="Имя" />
               </label>
             </div>
             <div class="custom-input custom-input--modal" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
-              <label><span class="custom-input__label"></span>
+              <label>
                 <input type="tel" name="user-example" aria-label="tel input" placeholder="Телефон" />
               </label>
             </div>
           </div>
           <div class="auto-resize-textarea">
-            <textarea name="example" rows="5" aria-label="textarea" placeholder="Ваш вопрос"></textarea>
+            <textarea name="example" rows="5" aria-label="Ваш вопрос" placeholder="Ваш вопрос"></textarea>
           </div>
-          <div class="feedback__btn-container feedback__btn-container--modal">
+          <div class="modal__btn-container">
             <button class="btn btn--black" type="submit">Отправить</button>
             <label class="checkbox">
-              <div class="checkbox__label">
-                <input type="checkbox" class="checkbox__input" checked="checked" value="3" />
-                <span class="checkbox__mark"></span>
-                <div class="checkbox__text">
-                  Я согласен на обработку персональных данных
-                </div>
+              <input type="checkbox" checked="checked" value="3" />
+              <span class="checkbox__mark"></span>
+              <div class="checkbox__text">
+                Я согласен на обработку персональных данных
               </div>
             </label>
           </div>
@@ -380,13 +390,8 @@
       </div>
     </div>
   </div>
-  <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js"></script>
-  <script type="text/javascript">
-  const lockBtnElement = document.querySelector('.lock');
-  lockBtnElement.addEventListener('click', () => window.focusLock.lock('.lock-block'));
-
-  </script>
+  <script src="./js/vendor.min.js"></script>
+  <script src="./js/main.min.js"></script>
 </body>
 
 </html>

@@ -9,21 +9,17 @@
     left: -140px;
     width: 950px;
     height: 1265px;
-    background-image: url(../img/polygon1.png);
+    background-image: url("../img/polygon1.png");
     background-repeat: no-repeat;
 
     @media (max-width: 1023px) {
       display: none;
     }
   }
-
-  & .container {
-    position: relative;
-  }
 }
 
-
 .feedback__wrapper {
+  position: relative;
   padding-top: 170px;
   padding-bottom: 250px;
   display: flex;
@@ -83,11 +79,6 @@
     flex-direction: column;
     gap: 0;
   }
-
-  &--modal {
-    flex-direction: column;
-    gap: 0;
-  }
 }
 
 .feedback__btn-container {
@@ -95,7 +86,7 @@
   grid-template-columns: 1fr 1fr;
   margin-top: 35px;
   gap: 50px;
-  align‑items: center;
+  align-items: center;
 
   @media (max-width: 1023px) {
     grid-template-columns: 0.8fr 1.2fr;
@@ -106,11 +97,5 @@
     grid-template-columns: 1fr;
     margin-top: 30px;
     gap: 25px;
-  }
-
-  &--modal {
-    margin-top: 10px;
-    grid-template-columns: 1fr;
-    gap: 10px;
   }
 }

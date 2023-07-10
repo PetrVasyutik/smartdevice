@@ -6,13 +6,11 @@
     line-height: 21px;
     padding: 25px 15px;
     width: 100%;
-    border: none;
     border: 1px solid $deep-sky-blue;
     border-radius: 3px;
     outline: none;
     transition: border-color 0.3s ease;
-
-    background-color: $swamp;
+    background-color: rgba(20, 39, 38, 15%);
 
     &::placeholder {
       color: $color-default-white;

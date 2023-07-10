@@ -1,9 +1,8 @@
 .header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: $black-pearl;
-  background-image: url(../img/fonheader.png);
+  background-image: url("../img/fonheader.png");
   background-repeat: no-repeat;
   z-index: 100;
 
@@ -70,7 +69,6 @@
 }
 
 .header button {
-
   @media (max-width: 1023px) {
     display: none;
   }
