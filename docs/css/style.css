@@ -1275,12 +1275,6 @@ h4 {
   font-weight: 400;
   color: #ffffff;
 }
-@media (max-width: 767px) {
-  .service__title {
-    padding: 30px 90px 170px 30px;
-    max-width: 320px;
-  }
-}
 @media (max-width: 1023px) {
   .service__title {
     padding: 40px 395px 155px 45px;
@@ -1288,6 +1282,8 @@ h4 {
 }
 @media (max-width: 767px) {
   .service__title {
+    padding: 30px 90px 170px 30px;
+    max-width: 320px;
     font-size: 18px;
   }
 }
