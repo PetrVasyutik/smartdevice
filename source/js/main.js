@@ -1,10 +1,9 @@
-import { iosVhFix } from './utils/ios-vh-fix';
-import { initModals } from './modules/modals/init-modals';
-import { Form } from './modules/form-validate/form';
-import { initAccordions } from './modules/accordions/init-accordion';
-import { initPhoneMask } from './modules/phone-mask/phone-mask';
-import { initAutoResizeTextarea } from './modules/textarea/auto-resize-textarea';
-import { FocusLock } from './modules/autofocus/focus-lock';
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {Form} from './modules/form-validate/form';
+import {initAccordions} from './modules/accordions/init-accordion';
+import {initPhoneMask} from './modules/phone-mask/phone-mask';
+import {initAutoResizeTextarea} from './modules/textarea/auto-resize-textarea';
 
 // ---------------------------------
 
@@ -31,26 +30,27 @@ window.addEventListener('DOMContentLoaded', () => {
     initAutoResizeTextarea();
 
 
-    //записываем DOM элемент в переменную*
+    // записываем DOM элемент в переменную*
     const btn = document.querySelector('[data-show="button"]');
 
-    //записываем DOM элемент в переменную*
-    const parent = document.querySelector('[data-show="parent"]');
+    if (btn) {
+    // записываем DOM элемент в переменную*
+      const parent = document.querySelector('[data-show="parent"]');
 
-    //событие клик по нашему DOM элементу*
-    btn.onclick = function() {
+      // событие клик по нашему DOM элементу*
+      btn.onclick = function () {
 
-      //элементу добавляем/удаляем класс (toggle)
-      //есть ещё add/remove, но toggle делает проверку
-      //если класса нет - добавляет, если есть - удаляет
-      parent.classList.toggle('is-open');
-      if (parent.classList.contains('is-open')) {
-        btn.innerHTML = 'Свернуть'
-      } else {
-        btn.innerHTML = 'Подробнее'
-      }
+        // элементу добавляем/удаляем класс (toggle)
+        // есть ещё add/remove, но toggle делает проверку
+        // если класса нет - добавляет, если есть - удаляет
+        parent.classList.toggle('is-open');
+        if (parent.classList.contains('is-open')) {
+          btn.innerHTML = 'Свернуть';
+        } else {
+          btn.innerHTML = 'Подробнее';
+        }
+      };
     }
-
 
   });
 
