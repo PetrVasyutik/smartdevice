@@ -59,15 +59,15 @@
 .btn__text {
   display: block;
 
-  &--mobile {
-    display: none;
-  }
-
   @media (max-width: 768px) {
     display: none;
+  }
+}
 
-    &--mobile {
-      display: block;
-    }
+.btn__text-mobile {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
   }
 }

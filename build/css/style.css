@@ -727,14 +727,17 @@ h4 {
 .btn__text {
   display: block;
 }
-.btn__text--mobile {
-  display: none;
-}
 @media (max-width: 768px) {
   .btn__text {
     display: none;
   }
-  .btn__text--mobile {
+}
+
+.btn__text-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .btn__text-mobile {
     display: block;
   }
 }
