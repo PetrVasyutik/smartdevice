@@ -137,7 +137,9 @@
               <a href="#" class="service">
                 <picture>
                   <source media="(max-width: 768px)" srcset="./img/foncard1mobile.jpg 1x, ./img/foncard1mobile@2x.jpg 2x">
+                  <source media="(max-width: 768px)" srcset="./img/foncard1mobile.webp 1x, ./img/foncard1mobile@2x.webp 2x" type="image/webp">
                   <source media="(max-width: 1023px)" srcset="./img/foncard1tablet.jpg 1x, ./img/foncard1tablet@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="./img/foncard1tablet.webp 1x, ./img/foncard1tablet@2x.webp 2x" type="image/webp">
                   <source srcset="./img/foncard1.webp" type="image/webp">
                   <img src="./img/foncard1.jpg" srcset="./img/foncard1@2x.jpg 2x" alt="Печатная плата">
                 </picture>
@@ -153,7 +155,9 @@
               <a href="#" class="service">
                 <picture>
                   <source media="(max-width: 768px)" srcset="./img/foncard2mobile.jpg 1x, ./img/foncard2mobile@2x.jpg 2x">
+                  <source media="(max-width: 768px)" srcset="./img/foncard2mobile.webp 1x, ./img/foncard2mobile@2x.webp 2x" type="image/webp">
                   <source media="(max-width: 1023px)" srcset="./img/foncard2tablet.jpg 1x, ./img/foncard2tablet@2x.jpg 2x">
+                  <source media="(max-width: 1023px)" srcset="./img/foncard2tablet.webp 1x, ./img/foncard2tablet@2x.webp 2x" type="image/webp">
                   <source srcset="./img/foncard2.webp" type="image/webp">
                   <img src="./img/foncard2.jpg" srcset="./img/foncard2@2x.jpg 2x" alt="Печатная плата">
                 </picture>
@@ -169,6 +173,7 @@
               <a href="#" class="service">
                 <picture>
                   <source media="(max-width: 768px)" srcset="./img/foncard3mobile.jpg 1x, ./img/foncard3mobile@2x.jpg 2x">
+                  <source media="(max-width: 768px)" srcset="./img/foncard3mobile.webp 1x, ./img/foncard3mobile@2x.webp 2x" type="image/webp">
                   <source media="(max-width: 1023px)" srcset="./img/foncard3tablet.jpg 1x, ./img/foncard3tablet@2x.jpg 2x">
                   <source srcset="./img/foncard3.webp" type="image/webp">
                   <img src="./img/foncard3.jpg" srcset="./img/foncard3@2x.jpg 2x" alt="Печатная плата">
@@ -202,12 +207,12 @@
                 <div class="feedback__form-container">
                   <div class="custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
                     <label>
-                      <input type="text" name="user-name-1" aria-label="name input" placeholder="Имя" />
+                      <input type="text" name="Имя" aria-label="name input" placeholder="Имя" />
                     </label>
                   </div>
                   <div class="custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
                     <label>
-                      <input type="tel" name="user-example" aria-label="tel input" placeholder="Телефон" />
+                      <input type="tel" name="user-example" aria-label="Номер телефона" placeholder="Телефон" />
                     </label>
                   </div>
                 </div>
@@ -216,13 +221,13 @@
                 </div>
                 <div class="feedback__btn-container">
                   <button class="btn btn--black" type="submit">Задать вопрос</button>
-                  <label class="checkbox">
+                  <span class="checkbox">
                     <input type="checkbox" checked="checked" value="3" />
                     <span class="checkbox__mark"></span>
                     <div class="checkbox__text">
                       Я согласен на обработку персональных данных
                     </div>
-                  </label>
+                  </span>
                 </div>
               </form>
             </div>
@@ -231,113 +236,111 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="footer__wrapper">
-          <div class="footer__logo">
-            <a class="logo" href="#">
-              <img src="./img/svg/logo.svg" alt="Логотип Smart Device" width="215" height="55">
-            </a>
-            <div class="social">
-              <ul class="social__list">
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg width="40" height="40">
-                      <use xlink:href="./img/sprite.svg#ok"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg width="40" height="40">
-                      <use xlink:href="./img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link" href="#">
-                    <svg width="40" height="40">
-                      <use xlink:href="./img/sprite.svg#pinterest"></use>
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <a class="logo" href="#">
+            <img src="./img/svg/logo.svg" alt="Логотип Smart Device" width="215" height="55">
+          </a>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg width="40" height="40">
+                    <use xlink:href="./img/sprite.svg#ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg width="40" height="40">
+                    <use xlink:href="./img/sprite.svg#vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <svg width="40" height="40">
+                    <use xlink:href="./img/sprite.svg#pinterest"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="accordion" data-accordion="parent" data-single="data-single" data-destroy="(max-width: 767px)">
-            <div class="accordion__element" data-accordion="element">
-              <button class="accordion__button btn" type="button" data-accordion="button">
-                <span>Разделы сайта</span>
-                <svg class="accordion__icon-open" width="15" height="15">
-                  <use xlink:href="./img/sprite.svg#plus"></use>
-                </svg>
-                <svg class="accordion__icon-close" width="15" height="15">
-                  <use xlink:href="./img/sprite.svg#minus"></use>
-                </svg>
-              </button>
-              <div class="accordion__content" data-accordion="content">
-                <div class="accordion__wrapper">
-                  <div class="footer-menu">
-                    <ul class="footer-menu__list">
-                      <li class="footer-menu__item">
-                        <a class="footer-menu__link" href="#">О компании</a>
-                      </li>
-                      <li class="footer-menu__item">
-                        <a class="footer-menu__link" href="#">Продукты</a>
-                      </li>
-                      <li class="footer-menu__item">
-                        <a class="footer-menu__link" href="#">Производство печатных плат</a>
-                      </li>
-                      <li class="footer-menu__item">
-                        <a class="footer-menu__link" href="#">Монтаж печатных плат</a>
-                      </li>
-                      <li class="footer-menu__item">
-                        <a class="footer-menu__link" href="#">Комплектующие</a>
-                      </li>
-                      <li class="footer-menu__item">
-                        <a class="footer-menu__link" href="#">Доставка</a>
-                      </li>
-                      <li class="footer-menu__item">
-                        <a class="footer-menu__link" href="#">Контакты</a>
-                      </li>
-                    </ul>
-                  </div>
+        </div>
+        <div class="accordion" data-accordion="parent" data-single="data-single" data-destroy="(max-width: 767px)">
+          <div class="accordion__element" data-accordion="element">
+            <button class="accordion__button btn" type="button" data-accordion="button">
+              <span>Разделы сайта</span>
+              <svg class="accordion__icon-open" width="15" height="15">
+                <use xlink:href="./img/sprite.svg#plus"></use>
+              </svg>
+              <svg class="accordion__icon-close" width="15" height="15">
+                <use xlink:href="./img/sprite.svg#minus"></use>
+              </svg>
+            </button>
+            <div class="accordion__content" data-accordion="content">
+              <div class="accordion__wrapper">
+                <div class="footer-menu">
+                  <ul class="footer-menu__list">
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="#">О компании</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="#">Продукты</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="#">Производство печатных плат</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="#">Монтаж печатных плат</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="#">Комплектующие</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="#">Доставка</a>
+                    </li>
+                    <li class="footer-menu__item">
+                      <a class="footer-menu__link" href="#">Контакты</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-            <div class="accordion__element" data-accordion="element">
-              <button class="accordion__button btn" type="button" data-accordion="button">
-                <span>Наш офис</span>
-                <svg class="accordion__icon-open" width="15" height="15">
-                  <use xlink:href="./img/sprite.svg#plus"></use>
-                </svg>
-                <svg class="accordion__icon-close" width="15" height="15">
-                  <use xlink:href="./img/sprite.svg#minus"></use>
-                </svg>
-              </button>
-              <div class="accordion__content" data-accordion="content">
-                <div class="accordion__wrapper">
-                  <div class="footer-contacts">
-                    <ul class="footer-contacts__list">
-                      <li class="footer-contacts__item">
-                        <address>г. Мытищи, Олимпийский проспект, д. 10</address>
-                      </li>
-                      <li class="footer-contacts__item">
-                        <a class="footer-contacts__link" href="tel:+74955894050">
-                          <span>+7 (495) 589-40-50</span>
-                        </a>
-                      </li>
-                      <li class="footer-contacts__item">
-                        <a class="footer-contacts__link" href="tel:+79255895829">
-                          <span>+7 (925) 589-58-29</span>
-                        </a>
-                      </li>
-                      <li class="footer-contacts__item">
-                        <a class="footer-contacts__link" href="tel:+79253647813">
-                          <span>+7 (925) 364-78-13</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
+          </div>
+          <div class="accordion__element" data-accordion="element">
+            <button class="accordion__button btn" type="button" data-accordion="button">
+              <span>Наш офис</span>
+              <svg class="accordion__icon-open" width="15" height="15">
+                <use xlink:href="./img/sprite.svg#plus"></use>
+              </svg>
+              <svg class="accordion__icon-close" width="15" height="15">
+                <use xlink:href="./img/sprite.svg#minus"></use>
+              </svg>
+            </button>
+            <div class="accordion__content" data-accordion="content">
+              <div class="accordion__wrapper">
+                <div class="footer-contacts">
+                  <ul class="footer-contacts__list">
+                    <li class="footer-contacts__item">
+                      <address>г. Мытищи, Олимпийский проспект, д. 10</address>
+                    </li>
+                    <li class="footer-contacts__item">
+                      <a class="footer-contacts__link" href="tel:+74955894050">
+                        <span>+7 (495) 589-40-50</span>
+                      </a>
+                    </li>
+                    <li class="footer-contacts__item">
+                      <a class="footer-contacts__link" href="tel:+79255895829">
+                        <span>+7 (925) 589-58-29</span>
+                      </a>
+                    </li>
+                    <li class="footer-contacts__item">
+                      <a class="footer-contacts__link" href="tel:+79253647813">
+                        <span>+7 (925) 364-78-13</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -361,12 +364,12 @@
           <div class="modal__form-container">
             <div class="custom-input custom-input--modal" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="data-required">
               <label>
-                <input data-focus type="text" name="user-name-1" aria-label="name input" placeholder="Имя" />
+                <input data-focus type="text" name="user-name-1" aria-label="Имя" placeholder="Имя" />
               </label>
             </div>
             <div class="custom-input custom-input--modal" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="data-required">
               <label>
-                <input type="tel" name="user-example" aria-label="tel input" placeholder="Телефон" />
+                <input type="tel" name="user-example" aria-label="Номер телефона" placeholder="Телефон" />
               </label>
             </div>
           </div>
@@ -375,13 +378,13 @@
           </div>
           <div class="modal__btn-container">
             <button class="btn btn--black" type="submit">Отправить</button>
-            <label class="checkbox">
+            <span class="checkbox">
               <input type="checkbox" checked="checked" value="3" />
               <span class="checkbox__mark"></span>
               <div class="checkbox__text">
                 Я согласен на обработку персональных данных
               </div>
-            </label>
+            </span>
           </div>
         </form>
       </div>

@@ -29,12 +29,11 @@ window.addEventListener('DOMContentLoaded', () => {
     initPhoneMask();
     initAutoResizeTextarea();
 
-
     // записываем DOM элемент в переменную*
     const btn = document.querySelector('[data-show="button"]');
 
     if (btn) {
-    // записываем DOM элемент в переменную*
+      // записываем DOM элемент в переменную*
       const parent = document.querySelector('[data-show="parent"]');
 
       // событие клик по нашему DOM элементу*
@@ -51,9 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
       };
     }
-
   });
-
 });
 
 // ---------------------------------
