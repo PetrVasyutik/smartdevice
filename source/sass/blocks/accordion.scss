@@ -61,9 +61,19 @@
     text-transform: uppercase;
     display: flex;
     justify-content: space-between;
+    font-family: $ff-title;
+    line-height: 16px;
+    font-weight: 700;
+    color: $color-default-white;
+    background-color: $black-pearl;
+    border: none;
 
     @media (max-width: 767px) {
       cursor: pointer;
+
+      &:hover {
+      opacity: 0.8;
+      }
     }
   }
 
