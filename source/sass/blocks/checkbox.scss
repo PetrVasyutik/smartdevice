@@ -5,9 +5,11 @@
   padding-top: 10px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
 
   [type="checkbox"] {
-    display: none;
+    position: fixed;
+    transform: scale(0);
   }
 
   &__mark {
