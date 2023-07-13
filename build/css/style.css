@@ -1636,8 +1636,8 @@ h4 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 10px;
-  gap: 10px;
+  margin-top: 5px;
+  gap: 8px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1666,8 +1666,8 @@ h4 {
 }
 .modal__close-btn {
   position: absolute;
-  top: 22px;
-  right: 22px;
+  top: 18px;
+  right: 16px;
   z-index: 1;
   width: 40px;
   height: 40px;
@@ -1708,7 +1708,8 @@ h4 {
 
 .modal__title {
   color: #ffffff;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 30px;
   line-height: 42px;
 }
@@ -1716,7 +1717,7 @@ h4 {
 .modal__subtitle {
   margin-bottom: 40px;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 20px;
   color: #ffffff;
 }
 
@@ -1780,9 +1781,15 @@ h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .checkbox [type=checkbox] {
-  display: none;
+  position: fixed;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
 }
 .checkbox__mark {
   -ms-flex-negative: 0;
