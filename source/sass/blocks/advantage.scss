@@ -1,5 +1,5 @@
 .advantage {
-  padding: 40px 45px 60px 45px;
+  padding: 40px 5px 60px 45px;
   height: 100%;
 
   &:hover {
@@ -30,7 +30,7 @@
 .advantage__title {
   color: $deep-sky-blue;
   margin-top: 15px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 
   @media (max-width: 767px) {
     margin-top: 10px;

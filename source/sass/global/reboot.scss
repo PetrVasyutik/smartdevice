@@ -19,7 +19,6 @@ html {
   line-height: 21px;
   font-family: $ff-placeholder;
   color: $black-pearl;
-
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   // оптимизация выравнивания шрифта относительно центра строки
@@ -145,7 +144,8 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 0;
+  letter-spacing: 5.6px;
+  margin-bottom: 35px;
 
   @media (max-width: 1024px) {
     font-size: 64px;
