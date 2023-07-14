@@ -22,16 +22,11 @@
 }
 
 .advantages__item {
-  max-width: 47%;
-  flex-basis: 47%;
+  flex-basis: calc(100% / 2);
   border: 1px solid $whisper;
   border-left: 5px solid $deep-sky-blue;
   min-height: 300px;
-
-  @media (max-width: 1023px) {
-    max-width: 46%;
-    flex-basis: 46%;
-  }
+  max-width: 590px;
 
   @media (max-width: 767px) {
     max-width: 100%;
