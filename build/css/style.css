@@ -496,13 +496,15 @@ h1 {
   letter-spacing: 5.6px;
   margin-bottom: 35px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   h1 {
     font-size: 64px;
     line-height: 75px;
+    letter-spacing: 4.5px;
+    margin-bottom: 0;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   h1 {
     font-size: 36px;
     line-height: 42px;
@@ -543,6 +545,14 @@ h4 {
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (max-width: 1023px) {
+  p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    line-height: 20px;
+  }
 }
 
 .wrapper {
@@ -690,6 +700,11 @@ h4 {
   padding: 19px 28px;
   letter-spacing: 0.9px;
 }
+@media (max-width: 1023px) {
+  .btn--large {
+    margin-left: 45px;
+  }
+}
 @media (max-width: 768px) {
   .btn--large {
     font-size: 14px;
@@ -781,6 +796,13 @@ h4 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1023px) {
+  .header-contacts {
+    width: 55px;
+    gap: 60px;
+    padding-bottom: 35px;
+  }
+}
 
 .header-contacts__email {
   position: relative;
@@ -865,6 +887,7 @@ a.header-contacts__email {
 }
 @media (max-width: 1023px) {
   .footer__wrapper {
+    padding: 5px 25px 0 45px;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 90px 1fr;
@@ -1026,7 +1049,7 @@ a.header-contacts__email {
 }
 @media (max-width: 1023px) {
   .main-block__wrapper {
-    padding-top: 80px;
+    padding-top: 70px;
     padding-bottom: 205px;
     padding-left: 0;
   }
@@ -1042,6 +1065,11 @@ a.header-contacts__email {
   line-height: 34px;
   max-width: 685px;
   margin-bottom: 45px;
+}
+@media (max-width: 1023px) {
+  .main-block__description {
+    margin-bottom: 55px;
+  }
 }
 @media (max-width: 767px) {
   .main-block__description {
@@ -1075,6 +1103,14 @@ a.header-contacts__email {
           justify-content: space-between;
   row-gap: 30px;
 }
+@media (max-width: 1023px) {
+  .advantages__list {
+    row-gap: 20px;
+    -webkit-column-gap: 30px;
+       -moz-column-gap: 30px;
+            column-gap: 30px;
+  }
+}
 @media (max-width: 767px) {
   .advantages__list {
     -webkit-box-orient: vertical;
@@ -1091,6 +1127,13 @@ a.header-contacts__email {
   border-left: 5px solid #00b2ff;
   min-height: 300px;
   max-width: 590px;
+}
+@media (max-width: 1023px) {
+  .advantages__item {
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
+    min-height: 360px;
+  }
 }
 @media (max-width: 767px) {
   .advantages__item {
@@ -1118,7 +1161,7 @@ a.header-contacts__email {
 }
 @media (max-width: 1023px) {
   .advantage {
-    padding: 40px 30px 35px 40px;
+    padding: 40px 30px 40px 40px;
   }
 }
 @media (max-width: 767px) {
@@ -1132,21 +1175,26 @@ a.header-contacts__email {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+@media (max-width: 1023px) {
+  .advantage__title {
+    margin-bottom: 5px;
+  }
+}
 @media (max-width: 767px) {
   .advantage__title {
     margin-top: 10px;
   }
 }
 
-.advantages__icon {
+.advantage__icon {
   color: #00b2ff;
 }
 
-.advantages__description {
+.advantage__description {
   margin-top: 10px;
 }
 @media (max-width: 767px) {
-  .advantages__description {
+  .advantage__description {
     font-size: 14px;
   }
 }
@@ -1198,6 +1246,11 @@ a.header-contacts__email {
 .about__text {
   margin-top: 20px;
 }
+@media (max-width: 1023px) {
+  .about__text {
+    margin-top: 0;
+  }
+}
 @media (max-width: 767px) {
   .about__text {
     font-size: 14px;
@@ -1214,6 +1267,13 @@ a.header-contacts__email {
   margin-top: 105px;
   padding-top: 65px;
   padding-bottom: 140px;
+}
+@media (max-width: 1023px) {
+  .services {
+    margin-top: 70px;
+    padding-top: 55px;
+    padding-bottom: 75px;
+  }
 }
 @media (max-width: 767px) {
   .services {
@@ -1239,6 +1299,7 @@ a.header-contacts__email {
         -ms-flex-direction: column;
             flex-direction: column;
     gap: 30px;
+    margin-top: 40px;
   }
 }
 
@@ -1319,6 +1380,18 @@ a.header-contacts__email {
   }
 }
 
+a.service {
+  display: block;
+}
+
+a.service img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 250px;
+}
+
 .accordion {
   width: 100%;
   margin: 0 auto 50px auto;
@@ -1326,21 +1399,15 @@ a.header-contacts__email {
   display: -ms-flexbox;
   display: flex;
 }
-@media (max-width: 767px) {
-  .accordion {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
 @media (max-width: 1024px) {
   .accordion {
+    margin-top: -40px;
     grid-area: accordion;
     width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    gap: 110px;
   }
 }
 @media (max-width: 1023px) {
@@ -1353,6 +1420,14 @@ a.header-contacts__email {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
+  }
+}
+@media (max-width: 767px) {
+  .accordion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 .accordion .accordion {
@@ -1453,7 +1528,7 @@ a.header-contacts__email {
 }
 @media (max-width: 1023px) {
   .feedback__wrapper {
-    padding-top: 50px;
+    padding-top: 45px;
     padding-bottom: 125px;
   }
 }
@@ -1490,7 +1565,7 @@ a.header-contacts__email {
 }
 
 .feedback__subtitle {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .feedback__form {
@@ -1511,6 +1586,11 @@ a.header-contacts__email {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+}
+@media (max-width: 1023px) {
+  .feedback__form-container {
+    gap: 45px;
+  }
 }
 @media (max-width: 767px) {
   .feedback__form-container {
@@ -1535,9 +1615,7 @@ a.header-contacts__email {
 }
 @media (max-width: 1023px) {
   .feedback__btn-container {
-    -ms-grid-columns: 0.8fr 1.2fr;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 85px;
+    gap: 50px;
   }
 }
 @media (max-width: 767px) {
@@ -1830,6 +1908,11 @@ a.header-contacts__email {
           flex-direction: column-reverse;
   margin-top: 30px;
 }
+@media (max-width: 1023px) {
+  .show-more {
+    margin-top: 12px;
+  }
+}
 
 .show-more__text {
   display: none;
@@ -1851,6 +1934,12 @@ a.header-contacts__email {
   max-width: 50%;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+}
+@media (max-width: 1023px) {
+  .custom-input,
+.custom-textarea {
+    padding-bottom: 25px;
+  }
 }
 @media screen and (max-width: 767px) {
   .custom-input,

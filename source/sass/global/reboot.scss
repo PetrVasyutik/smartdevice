@@ -147,12 +147,14 @@ h1 {
   letter-spacing: 5.6px;
   margin-bottom: 35px;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     font-size: 64px;
     line-height: 75px;
+    letter-spacing: 4.5px;
+    margin-bottom: 0;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     font-size: 36px;
     line-height: 42px;
   }
@@ -190,4 +192,13 @@ h4 {
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+p {
+
+  @media (max-width: 1023px) {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    line-height: 20px;
+  }
 }
