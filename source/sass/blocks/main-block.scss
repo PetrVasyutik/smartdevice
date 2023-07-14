@@ -12,13 +12,14 @@
 }
 
 .main-block__transparent {
+  height: 100%;
   background-image: url("../img/opacitymainunit.png");
 }
 
 .main-block__wrapper {
-  padding-top: 140px;
-  padding-bottom: 250px;
-  padding-left: 150px;
+  padding-top: 190px;
+  padding-bottom: 280px;
+  padding-left: 125px;
 
   @media (max-width: 1023px) {
     padding-top: 80px;

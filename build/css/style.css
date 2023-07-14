@@ -493,7 +493,8 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
-  margin-bottom: 0;
+  letter-spacing: 5.6px;
+  margin-bottom: 35px;
 }
 @media (max-width: 1024px) {
   h1 {
@@ -635,9 +636,9 @@ h4 {
 
 .container {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 400px 0 350px;
+  padding: 0 20px;
+  max-width: 1220px;
 }
 @media (max-width: 1439px) {
   .container {
@@ -699,7 +700,8 @@ h4 {
 .btn--large {
   font-size: 18px;
   background-color: #00b2ff;
-  padding: 25px 15px;
+  padding: 19px 28px;
+  letter-spacing: 0.9px;
 }
 @media (max-width: 768px) {
   .btn--large {
@@ -761,7 +763,7 @@ h4 {
 }
 
 .header__wrapper {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -779,8 +781,22 @@ h4 {
   }
 }
 
+.header-contacts {
+  width: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header__logo {
   margin-right: 20px;
+}
+
+a.header__logo {
+  margin-right: 40px;
 }
 
 .header-contacts__email {
@@ -800,6 +816,10 @@ h4 {
   width: 20px;
   height: 20px;
   background-image: url("data:image/svg+xml,%3Csvg width='21' height='20' viewBox='0 0 21 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.0584 0H2.94568C1.59663 0 0.5 1.441 0.5 3.2137V16.7863C0.5 18.559 1.59663 20 2.94568 20H18.0543C19.4034 20 20.5 18.559 20.5 16.7863V3.21914C20.5041 1.44644 19.4075 0 18.0584 0ZM19.3868 16.7863C19.3868 17.7488 18.7909 18.5318 18.0584 18.5318H2.94568C2.21322 18.5318 1.61732 17.7488 1.61732 16.7863V3.21914C1.61732 2.25666 2.21322 1.47363 2.94568 1.47363H18.0543C18.7868 1.47363 19.3827 2.25666 19.3827 3.21914V16.7863H19.3868Z' fill='%2300B2FF'/%3E%3Cpath d='M13.1133 9.83144L18.0047 4.06744C18.2323 3.79555 18.253 3.33334 18.0461 3.02883C17.8392 2.72975 17.4874 2.70256 17.2557 2.97445L10.5104 10.9299L9.19446 9.38554C9.19032 9.38011 9.18618 9.37467 9.18618 9.36923C9.15721 9.33117 9.12824 9.29854 9.09514 9.26591L3.74029 2.96901C3.50855 2.69713 3.1568 2.72431 2.94989 3.02883C2.74298 3.33334 2.76367 3.79555 2.99541 4.06744L7.94471 9.88038L3.0161 15.9435C2.79264 16.2208 2.78022 16.683 2.99127 16.9821C3.103 17.1343 3.25198 17.2159 3.40096 17.2159C3.53752 17.2159 3.67408 17.1506 3.78167 17.0201L8.78477 10.87L10.1421 12.4633C10.2497 12.5884 10.3821 12.6482 10.5145 12.6482C10.647 12.6482 10.7835 12.5829 10.887 12.4579L12.2816 10.8157L17.2557 17.0256C17.3633 17.1615 17.504 17.2268 17.6405 17.2268C17.7895 17.2268 17.9344 17.1506 18.0461 16.9984C18.2571 16.7047 18.2489 16.2371 18.0254 15.9598L13.1133 9.83144Z' fill='%2300B2FF'/%3E%3C/svg%3E");
+}
+
+a.header-contacts__email {
+  margin-right: 0;
 }
 
 .header-contacts__phone {
@@ -824,8 +844,12 @@ h4 {
   }
 }
 
+.header .btn {
+  padding: 11px 16px;
+  margin-right: 15px;
+}
 @media (max-width: 1023px) {
-  .header button {
+  .header .btn {
     display: none;
   }
 }
@@ -852,7 +876,7 @@ h4 {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 400px 0 350px;
+  padding: 15px 280px 0 373px;
 }
 @media (max-width: 1439px) {
   .footer__wrapper {
@@ -996,6 +1020,7 @@ h4 {
 
 .social {
   margin-top: 30px;
+  padding-left: 9px;
 }
 @media (max-width: 1023px) {
   .social {
@@ -1025,13 +1050,14 @@ h4 {
 }
 
 .main-block__transparent {
+  height: 100%;
   background-image: url("../img/opacitymainunit.png");
 }
 
 .main-block__wrapper {
-  padding-top: 140px;
-  padding-bottom: 250px;
-  padding-left: 150px;
+  padding-top: 190px;
+  padding-bottom: 280px;
+  padding-left: 125px;
 }
 @media (max-width: 1023px) {
   .main-block__wrapper {
@@ -1079,10 +1105,10 @@ h4 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
-  row-gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  row-gap: 30px;
 }
 @media (max-width: 767px) {
   .advantages__list {
@@ -1099,6 +1125,7 @@ h4 {
       flex-basis: 47%;
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
+  min-height: 300px;
 }
 @media (max-width: 1023px) {
   .advantages__item {
@@ -1116,7 +1143,7 @@ h4 {
 }
 
 .advantage {
-  padding: 40px 45px 60px 45px;
+  padding: 40px 5px 60px 45px;
   height: 100%;
 }
 .advantage:hover {
@@ -1145,7 +1172,7 @@ h4 {
 .advantage__title {
   color: #00b2ff;
   margin-top: 15px;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 @media (max-width: 767px) {
   .advantage__title {
@@ -1226,9 +1253,9 @@ h4 {
 
 .services {
   background-color: #041827;
-  margin-top: 70px;
+  margin-top: 120px;
   padding-top: 50px;
-  padding-bottom: 70px;
+  padding-bottom: 140px;
 }
 @media (max-width: 767px) {
   .services {
@@ -1245,7 +1272,7 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 85px;
+  gap: 50px;
 }
 @media (max-width: 1023px) {
   .services__list {
@@ -1444,8 +1471,8 @@ h4 {
 .feedback::before {
   content: "";
   position: absolute;
-  top: -95px;
-  left: -140px;
+  top: -96px;
+  left: 120px;
   width: 950px;
   height: 1265px;
   background-image: url("../img/polygon1.png");
@@ -1459,12 +1486,12 @@ h4 {
 
 .feedback__wrapper {
   position: relative;
-  padding-top: 170px;
-  padding-bottom: 250px;
+  padding-top: 165px;
+  padding-bottom: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 115px;
+  gap: 80px;
 }
 @media (max-width: 1023px) {
   .feedback__wrapper {
@@ -1483,6 +1510,7 @@ h4 {
   max-width: 50%;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  padding-top: 80px;
 }
 @media (max-width: 1023px) {
   .feedback__image {
@@ -1495,7 +1523,7 @@ h4 {
 
 .feedback__title {
   color: #ffffff;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 @media (max-width: 1023px) {
   .feedback__title {
@@ -1541,8 +1569,7 @@ h4 {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  margin-top: 35px;
-  gap: 50px;
+  margin-top: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1784,6 +1811,7 @@ h4 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-left: 40px;
 }
 .checkbox [type=checkbox] {
   position: fixed;
@@ -1842,6 +1870,7 @@ h4 {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  margin-top: 30px;
 }
 
 .show-more__text {

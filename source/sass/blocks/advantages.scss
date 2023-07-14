@@ -13,8 +13,8 @@
 .advantages__list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 40px;
-  row-gap: 20px;
+  justify-content: space-between;
+  row-gap: 30px;
 
   @media (max-width: 767px) {
     flex-direction: column;
@@ -26,6 +26,7 @@
   flex-basis: 47%;
   border: 1px solid $whisper;
   border-left: 5px solid $deep-sky-blue;
+  min-height: 300px;
 
   @media (max-width: 1023px) {
     max-width: 46%;
