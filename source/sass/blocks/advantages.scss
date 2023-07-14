@@ -16,6 +16,11 @@
   justify-content: space-between;
   row-gap: 30px;
 
+  @media (max-width: 1023px) {
+    row-gap: 20px;
+    column-gap: 30px;
+  }
+
   @media (max-width: 767px) {
     flex-direction: column;
   }
@@ -27,6 +32,11 @@
   border-left: 5px solid $deep-sky-blue;
   min-height: 300px;
   max-width: 590px;
+
+  @media (max-width: 1023px) {
+    flex-basis: calc(94% / 2);
+    min-height: 360px;
+  }
 
   @media (max-width: 767px) {
     max-width: 100%;

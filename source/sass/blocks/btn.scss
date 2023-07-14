@@ -32,6 +32,10 @@
     padding: 19px 28px;
     letter-spacing: 0.9px;
 
+    @media (max-width: 1023px) {
+      margin-left: 45px;
+    }
+
     @media (max-width: 768px) {
       font-size: 14px;
       padding: 10px 30px;

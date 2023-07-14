@@ -54,3 +54,14 @@
     height: 40px;
   }
 }
+
+a.service {
+  display: block;
+}
+
+a.service img {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 250px;
+}
