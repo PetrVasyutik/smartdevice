@@ -23,7 +23,15 @@
   }
 
   @media (max-width: 767px) {
-    padding: 25px 5px 60px 25px;
+    padding: 28px 30px 35px 26px;
+    min-height: 340px;
+  }
+
+  &--smal {
+
+    @media (max-width: 767px) {
+      min-height: 325px;
+    }
   }
 }
 
@@ -37,7 +45,7 @@
   }
 
   @media (max-width: 767px) {
-    margin-top: 10px;
+    margin-top: 8px;
     margin-bottom: 8px;
   }
 }

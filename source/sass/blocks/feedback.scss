@@ -33,6 +33,7 @@
 
   @media (max-width: 767px) {
     padding-bottom: 90px;
+    padding-top: 50px;
   }
 }
 
@@ -56,6 +57,17 @@
   @media (max-width: 1023px) {
     margin-bottom: 25px;
   }
+
+  @media (max-width: 1023px) {
+    margin-bottom: 35px;
+  }
+}
+
+.feedback__title h2 {
+
+  @media (max-width: 676px) {
+    font-size: 30px;
+  }
 }
 
 .feedback__subtitle {
@@ -63,6 +75,11 @@
 
   @media (max-width: 1023px) {
     margin-top: 5px;
+  }
+
+  @media (max-width: 1023px) {
+    font-size: 14px;
+    line-height: 19px;
   }
 }
 
@@ -103,7 +120,7 @@
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
-    margin-top: 30px;
-    gap: 25px;
+    margin-top: 60px;
+    gap: 12px;
   }
 }

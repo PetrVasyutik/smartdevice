@@ -6,6 +6,10 @@
   @media (max-width: 1023px) {
     margin-top: 35px;
   }
+
+  @media (max-width: 767px) {
+    margin-top: 0;
+  }
 }
 
 .show-more__text {
