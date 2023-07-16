@@ -54,12 +54,16 @@
   margin-bottom: 30px;
 
   @media (max-width: 1023px) {
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 }
 
 .feedback__subtitle {
   margin-top: 10px;
+
+  @media (max-width: 1023px) {
+    margin-top: 5px;
+  }
 }
 
 .feedback__form {
@@ -94,7 +98,7 @@
   align-items: center;
 
   @media (max-width: 1023px) {
-    gap: 50px;
+    gap: 30px;
   }
 
   @media (max-width: 767px) {
