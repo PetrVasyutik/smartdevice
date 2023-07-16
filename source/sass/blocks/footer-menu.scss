@@ -7,8 +7,10 @@
   }
 
   @media (max-width: 767px) {
-    padding-top: 20px;
+    padding-top: 0;
     padding-bottom: 20px;
+    font-size: 14px;
+    line-height: 19px;
   }
 }
 
@@ -27,4 +29,8 @@
 
 .footer-menu__item:not(:last-child) {
   margin-bottom: 10px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 14px;
+  }
 }
