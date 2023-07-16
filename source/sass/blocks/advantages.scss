@@ -23,6 +23,7 @@
 
   @media (max-width: 767px) {
     flex-direction: column;
+    row-gap: 30px;
   }
 }
 
@@ -41,5 +42,6 @@
   @media (max-width: 767px) {
     max-width: 100%;
     flex-basis: 100%;
+    min-height: 325px;
   }
 }
