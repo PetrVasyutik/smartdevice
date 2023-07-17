@@ -721,6 +721,9 @@ h4 {
     letter-spacing: 0.8px;
   }
 }
+.btn--modal {
+  max-width: 100%;
+}
 .btn:disabled {
   opacity: 0.5;
   pointer-events: none;
@@ -888,7 +891,7 @@ a.header-contacts__email {
 }
 @media (max-width: 767px) {
   .footer {
-    padding-top: 35px;
+    padding-top: 45px;
   }
 }
 
@@ -977,7 +980,7 @@ a.header-contacts__email {
 @media (max-width: 767px) {
   .footer-contacts {
     padding-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 0;
     font-size: 14px;
     line-height: 19px;
   }
@@ -1133,15 +1136,11 @@ a.header-contacts__email {
 }
 
 .advantages__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  row-gap: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 @media (max-width: 1023px) {
   .advantages__list {
@@ -1153,35 +1152,21 @@ a.header-contacts__email {
 }
 @media (max-width: 767px) {
   .advantages__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     row-gap: 30px;
   }
 }
 
 .advantages__item {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
   border: 1px solid #ebebeb;
   border-left: 5px solid #00b2ff;
   min-height: 300px;
   max-width: 590px;
 }
-@media (max-width: 1023px) {
-  .advantages__item {
-    -ms-flex-preferred-size: 47%;
-        flex-basis: 47%;
-    min-height: 360px;
-  }
-}
 @media (max-width: 767px) {
   .advantages__item {
     max-width: 100%;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    min-height: 325px;
   }
 }
 
@@ -1343,9 +1328,9 @@ a.header-contacts__email {
 
 .services {
   background-color: #041827;
-  margin-top: 105px;
+  margin-top: 100px;
   padding-top: 65px;
-  padding-bottom: 140px;
+  padding-bottom: 155px;
 }
 @media (max-width: 1023px) {
   .services {
@@ -2002,6 +1987,11 @@ a.service img {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
+}
+@media (max-width: 1023px) {
+  .checkbox {
+    padding-top: 0;
+  }
 }
 @media (max-width: 767px) {
   .checkbox {
