@@ -891,7 +891,7 @@ a.header-contacts__email {
 }
 @media (max-width: 767px) {
   .footer {
-    padding-top: 45px;
+    padding-top: 35px;
   }
 }
 
@@ -1144,7 +1144,7 @@ a.header-contacts__email {
 }
 @media (max-width: 1023px) {
   .advantages__list {
-    row-gap: 20px;
+    row-gap: 25px;
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
@@ -1164,9 +1164,20 @@ a.header-contacts__email {
   min-height: 300px;
   max-width: 590px;
 }
+@media (max-width: 1023px) {
+  .advantages__item {
+    min-height: 360px;
+  }
+}
 @media (max-width: 767px) {
   .advantages__item {
     max-width: 100%;
+    min-height: 340px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__item--small {
+    min-height: 325px;
   }
 }
 
@@ -1194,12 +1205,6 @@ a.header-contacts__email {
 @media (max-width: 767px) {
   .advantage {
     padding: 28px 30px 35px 26px;
-    min-height: 340px;
-  }
-}
-@media (max-width: 767px) {
-  .advantage--smal {
-    min-height: 325px;
   }
 }
 
@@ -1250,7 +1255,7 @@ a.header-contacts__email {
 }
 @media (max-width: 767px) {
   .about {
-    margin-top: 40px;
+    margin-top: 45px;
   }
 }
 
@@ -1309,8 +1314,7 @@ a.header-contacts__email {
   .about__text {
     line-height: 19px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    display: none;
+    margin-bottom: 0;
   }
 }
 .about__text--mobile {
@@ -1319,6 +1323,17 @@ a.header-contacts__email {
 @media (max-width: 767px) {
   .about__text--mobile {
     display: block;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1023px) {
+  .about__text--desktop {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .about__text--desktop {
+    display: none;
   }
 }
 
@@ -1334,7 +1349,7 @@ a.header-contacts__email {
 }
 @media (max-width: 1023px) {
   .services {
-    margin-top: 70px;
+    margin-top: 65px;
     padding-top: 55px;
     padding-bottom: 75px;
   }
@@ -1382,7 +1397,7 @@ a.header-contacts__email {
     margin-top: 40px;
   }
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .services__list {
     margin-top: 30px;
   }
@@ -1634,7 +1649,7 @@ a.service img {
 }
 @media (max-width: 767px) {
   .feedback__wrapper {
-    padding-bottom: 90px;
+    padding-bottom: 95px;
     padding-top: 50px;
   }
 }
@@ -1661,12 +1676,7 @@ a.service img {
 }
 @media (max-width: 1023px) {
   .feedback__title {
-    margin-bottom: 25px;
-  }
-}
-@media (max-width: 1023px) {
-  .feedback__title {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
   }
 }
 
@@ -1996,6 +2006,7 @@ a.service img {
 @media (max-width: 767px) {
   .checkbox {
     margin-left: 5px;
+    margin-top: 10px;
   }
 }
 .checkbox__mark {
@@ -2053,7 +2064,7 @@ a.service img {
 }
 @media (max-width: 1023px) {
   .show-more {
-    margin-top: 35px;
+    margin-top: 20px;
   }
 }
 @media (max-width: 767px) {
