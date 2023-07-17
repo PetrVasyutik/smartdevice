@@ -32,8 +32,8 @@
   }
 
   @media (max-width: 767px) {
-    padding-bottom: 95px;
     padding-top: 50px;
+    padding-bottom: 90px;
   }
 }
 
@@ -107,7 +107,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 55px;
-  margin-top: 25px;
+  margin-top: 35px;
   align-items: center;
 
   @media (max-width: 1023px) {
@@ -116,7 +116,7 @@
 
   @media (max-width: 767px) {
     grid-template-columns: 1fr;
-    margin-top: 60px;
+    margin-top: 25px;
     gap: 12px;
   }
 }
