@@ -2013,7 +2013,7 @@ textarea {
   line-height: 21px;
   padding: 25px 15px;
   width: 100%;
-  border: 1px solid #00b2ff;
+  border: 2px solid #00b2ff;
   border-radius: 3px;
   outline: none;
   -webkit-transition: border-color 0.3s ease;
@@ -2049,10 +2049,10 @@ textarea::placeholder {
   color: #ffffff;
 }
 textarea:hover {
-  border: 1px solid #041827;
+  border: 2px solid #041827;
 }
 textarea:focus {
-  border: 1px solid #041827;
+  border: 2px solid #041827;
 }
 
 .phone-mask input[type=tel] {
@@ -2189,7 +2189,7 @@ textarea:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   max-width: 50%;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
@@ -2247,7 +2247,7 @@ textarea:focus {
   min-height: 50px;
   margin-left: auto;
   padding: 15px;
-  border: 1px solid #00b2ff;
+  border: 2px solid #00b2ff;
   border-radius: 3px;
   outline: none;
   -webkit-transition: border 0.3s ease;
@@ -2285,13 +2285,13 @@ textarea:focus {
 .custom-input label textarea:hover,
 .custom-textarea label input:hover,
 .custom-textarea label textarea:hover {
-  border: 1px solid #041827;
+  border: 2px solid #041827;
 }
 .custom-input label input:focus,
 .custom-input label textarea:focus,
 .custom-textarea label input:focus,
 .custom-textarea label textarea:focus {
-  border: 1px solid #041827;
+  border: 2px solid #041827;
 }
 .custom-input__error,
 .custom-textarea__error {

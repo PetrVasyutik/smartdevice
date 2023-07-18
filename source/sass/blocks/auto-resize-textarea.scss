@@ -11,7 +11,7 @@
     line-height: 21px;
     padding: 25px 15px;
     width: 100%;
-    border: 1px solid $deep-sky-blue;
+    border: 2px solid $deep-sky-blue;
     border-radius: 3px;
     outline: none;
     transition: border-color 0.3s ease;
@@ -33,11 +33,11 @@
     }
 
     &:hover {
-      border: 1px solid $black-pearl;
+      border: 2px solid $black-pearl;
     }
 
     &:focus {
-      border: 1px solid $black-pearl;
+      border: 2px solid $black-pearl;
     }
   }
 
