@@ -39,7 +39,7 @@
 }
 
 .about__content {
-  margin-top: 20px;
+  margin-top: 12px;
 
   @media (max-width: 1023px) {
     margin-top: 0;
@@ -52,11 +52,14 @@
 }
 
 .about__text {
+  margin-top: 12px;
+  margin-bottom: 24px;
+
 
   @media (max-width: 1023px) {
     margin-top: 12px;
     margin-bottom: 12px;
-    line-height: 20px;
+    line-height: 21.5px;
   }
 
   @media (max-width: 767px) {
@@ -78,6 +81,7 @@
 
     @media (max-width: 1023px) {
       margin-top: 20px;
+      margin-bottom: 0;
     }
 
     @media (max-width: 767px) {

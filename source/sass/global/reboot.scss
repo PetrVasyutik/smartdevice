@@ -140,12 +140,12 @@ ul {
 h1 {
   font-family: $ff-title;
   font-size: 80px;
-  line-height: 94px;
+  line-height: 93.75px;
   font-weight: 700;
   text-transform: uppercase;
   margin-top: 0;
   letter-spacing: 5.6px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 
   @media (max-width: 1023px) {
     font-size: 64px;
@@ -181,6 +181,10 @@ h3 {
   line-height: 33px;
   font-weight: 400;
 
+  @media (max-width: 1023px) {
+    line-height: 31.5px;
+  }
+
   @media (max-width: 768px) {
     font-size: 20px;
     line-height: 28px;
@@ -193,4 +197,8 @@ h4 {
   line-height: 16px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+address {
+  font-style: normal;
 }

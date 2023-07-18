@@ -6,6 +6,11 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  transition: opacity $trans-default;
+
+  @include hover-focus {
+    opacity: 0.6;
+  }
 
   [type="checkbox"] {
     position: fixed;

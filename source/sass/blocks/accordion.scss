@@ -1,20 +1,21 @@
 .accordion {
   width: 100%;
-  margin: 0 auto 50px auto;
+  margin: 0 auto 39px auto;
   display: flex;
 
-  @media (max-width: 1024px) {
-    margin-top: -40px;
+  @media (max-width: 1023px) {
+    margin-top: -48px;
     grid-area: accordion;
     width: 100%;
     justify-content: space-between;
-    gap: 110px;
+    gap: 120px;
+    margin-bottom: 47px;
   }
 
   @media (max-width: 767px) {
     flex-direction: column;
     margin-top: 0;
-    gap: 10px;
+    gap: 0;
   }
 
   & & {
@@ -28,6 +29,17 @@
 
   &__element {
     position: relative;
+
+    &:first-child {
+
+      @media (max-width: 1023px) {
+        margin-left: -10px;
+      }
+
+      @media (max-width: 1023px) {
+        margin-left: 0;
+      }
+    }
 
     @media (max-width: 767px) {
       padding: 12px 15px;
@@ -48,8 +60,8 @@
   }
 
   &__element.is-active {
-    margin-top: -10px;
-    padding-bottom: 0;
+    margin-top: -2px;
+    padding-bottom: 5px;
   }
 
   &__element.is-active &__icon-open {
@@ -71,8 +83,10 @@
     display: flex;
     justify-content: space-between;
     font-family: $ff-title;
+    font-size: 15px;
     line-height: 16px;
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 0.75px;
     color: $color-default-white;
     background-color: $black-pearl;
     border: none;

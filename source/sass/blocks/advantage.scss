@@ -1,5 +1,5 @@
 .advantage {
-  padding: 40px 5px 60px 45px;
+  padding: 40px 5px 60px 38px;
   height: 100%;
 
   &:hover {
@@ -19,7 +19,7 @@
   }
 
   @media (max-width: 1023px) {
-    padding: 40px 30px 40px 35px;
+    padding: 40px 30px 35px 40px;
   }
 
   @media (max-width: 767px) {
@@ -34,6 +34,7 @@
 
   @media (max-width: 1023px) {
     margin-bottom: 5px;
+    margin-top: 10px;
   }
 
   @media (max-width: 767px) {
@@ -50,7 +51,8 @@
   margin-top: 10px;
 
   @media (max-width: 1023px) {
-    margin-top: 5px;
+    margin-top: 10px;
+    line-height: 21.6px;
   }
 
   @media (max-width: 767px) {
