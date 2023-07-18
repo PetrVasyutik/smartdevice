@@ -2,7 +2,7 @@
 .custom-textarea {
   position: relative;
   display: flex;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   max-width: 50%;
   flex-basis: 50%;
 
@@ -37,7 +37,7 @@
       min-height: 50px;
       margin-left: auto;
       padding: 15px;
-      border: 1px solid $deep-sky-blue;
+      border: 2px solid $deep-sky-blue;
       border-radius: 3px;
       outline: none;
       transition: border 0.3s ease;
@@ -53,11 +53,11 @@
       }
 
       &:hover {
-        border: 1px solid $black-pearl;
+        border: 2px solid $black-pearl;
       }
 
       &:focus {
-        border: 1px solid $black-pearl;
+        border: 2px solid $black-pearl;
       }
     }
   }

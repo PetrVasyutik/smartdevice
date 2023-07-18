@@ -203,7 +203,7 @@
                 <img src="./img/paper_airplane.png" srcset="./img/paper_airplane@2x.png 2x" alt="Бумажный самолет" width="510" height="285">
               </picture>
             </div>
-            <div class="feedback__form" data-form-validate>
+            <div class="feedback__form" data-form-validate data-callback="base">
               <div class="feedback__title">
                 <h2>Остались вопросы? Задайте их нам!</h2>
                 <div class="feedback__subtitle">Мы проконсультируем Вас бесплатно</div>
@@ -357,7 +357,7 @@
   <div class="modal modal--preload lock-block" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content" data-form-validate>
+      <div class="modal__content" data-form-validate data-callback="base">
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="20" height="20">
             <use xlink:href="./img/sprite.svg#icon-close"></use>
