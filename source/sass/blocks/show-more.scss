@@ -1,10 +1,10 @@
 .show-more {
   display: flex;
   flex-direction: column-reverse;
-  margin-top: 30px;
+  margin-top: 26px;
 
   @media (max-width: 1023px) {
-    margin-top: 20px;
+    margin-top: 2px;
   }
 
   @media (max-width: 767px) {

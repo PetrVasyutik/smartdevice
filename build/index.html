@@ -121,8 +121,8 @@
                 </p>
                 <div class="show-more__text">
                   <p class="about__text about__text--mobile">Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</p>
-                  <p class="about__text">Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов, 70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более 14 офисов по всей стране и 20 городов присутствия.</p>
-                  <p class="about__text">Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и время наших клиентов</p>
+                  <p class="about__text">Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
+                  <p class="about__text">Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
                 </div>
               </div>
             </div>
@@ -203,7 +203,7 @@
                 <img src="./img/paper_airplane.png" srcset="./img/paper_airplane@2x.png 2x" alt="Бумажный самолет" width="510" height="285">
               </picture>
             </div>
-            <div class="feedback__form">
+            <div class="feedback__form" data-form-validate>
               <div class="feedback__title">
                 <h2>Остались вопросы? Задайте их нам!</h2>
                 <div class="feedback__subtitle">Мы проконсультируем Вас бесплатно</div>
@@ -227,7 +227,7 @@
                 <div class="feedback__btn-container">
                   <button class="btn btn--black" type="submit">Задать вопрос</button>
                   <label class="checkbox">
-                    <input type="checkbox" checked="checked" value="3" />
+                    <input required type="checkbox" checked="checked" value="3" />
                     <span class="checkbox__mark"></span>
                     <span class="checkbox__text">
                       Я согласен на обработку персональных данных
@@ -357,7 +357,7 @@
   <div class="modal modal--preload lock-block" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content">
+      <div class="modal__content" data-form-validate>
         <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
           <svg width="20" height="20">
             <use xlink:href="./img/sprite.svg#icon-close"></use>
@@ -384,7 +384,7 @@
           <div class="modal__btn-container">
             <button class="btn btn--black btn--modal" type="submit">Отправить</button>
             <label class="checkbox">
-              <input type="checkbox" checked="checked" value="3" />
+              <input required type="checkbox" checked="checked" value="3" />
               <span class="checkbox__mark"></span>
               <span class="checkbox__text">
                 Я согласен на обработку персональных данных

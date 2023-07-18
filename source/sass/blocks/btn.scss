@@ -2,8 +2,10 @@
   display: inline-flex;
   padding: 15px 10px;
   font-family: $ff-title;
-  line-height: 16px;
+  font-size: 14px;
   font-weight: 700;
+  line-height: 16.4px;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   justify-content: center;
   align-items: center;
@@ -23,18 +25,23 @@
     color: $deep-sky-blue;
     background-color: $color-default-white;
     border: 1px solid $deep-sky-blue;
-    padding: 12px 55px;
+    padding: 12px 50px;
+
+    @media (max-width: 1023px) {
+      line-height: 16.41px;
+      letter-spacing: 0.7px;
+      padding: 12px 50px;
+    }
 
     @media (max-width: 767px) {
-
-      padding: 10px 45px;
+      padding: 10px 39px;
     }
   }
 
   &--large {
     font-size: 18px;
     background-color: $deep-sky-blue;
-    padding: 19px 28px;
+    padding: 20px 28px;
     letter-spacing: 0.9px;
 
     @media (max-width: 1023px) {
@@ -52,10 +59,17 @@
   &--black {
     background-color: $black-pearl;
     max-width: 265px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+
+    @media (max-width: 1023px) {
+      line-height: 18.75px;
+      padding-top: 16px;
+      padding-bottom: 10px;
+    }
 
     @media (max-width: 767px) {
       max-width: 100%;
-      letter-spacing: 0.8px;
     }
   }
 
