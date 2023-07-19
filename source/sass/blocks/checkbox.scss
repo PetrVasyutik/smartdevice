@@ -8,13 +8,22 @@
   justify-content: center;
   transition: opacity $trans-default;
 
-  @include hover-focus {
+  &:hover {
     opacity: 0.6;
+  }
+
+  &:focus {
+    color: red;
   }
 
   [type="checkbox"] {
     position: fixed;
     transform: scale(0);
+  }
+
+  [type="checkbox"]:focus-visible + .checkbox__mark {
+    background-color: $black-pearl;
+    opacity: 0.8;
   }
 
   @media (max-width: 1023px) {

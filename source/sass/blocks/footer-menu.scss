@@ -17,22 +17,32 @@
 .footer-menu__list {
   column-count: 2;
   column-width: auto;
+  column-gap: 40px;
 
   @media (max-width: 1023px) {
     column-count: 1;
   }
 }
 
-.footer-menu__item:not(:last-child) {
-  margin-bottom: 10px;
+.footer-menu__item {
 
-  @media (max-width: 767px) {
-    margin-bottom: 14px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 14px;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 60px;
+
+    @media (max-width: 1023px) {
+      margin-bottom: 0;
+    }
   }
 }
 
 .footer-menu__link {
   color: $color-default-white;
 }
-
-

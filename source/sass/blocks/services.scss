@@ -36,11 +36,12 @@
 
 .services__list {
   margin-top: 53px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 85px;
 
   @media (max-width: 1023px) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 30px;
     margin-top: 40px;
   }
