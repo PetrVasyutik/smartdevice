@@ -2013,7 +2013,7 @@ textarea {
   line-height: 21px;
   padding: 25px 15px;
   width: 100%;
-  border: 2px solid #00b2ff;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
   outline: none;
   -webkit-transition: border-color 0.3s ease;
@@ -2049,10 +2049,10 @@ textarea::placeholder {
   color: #ffffff;
 }
 textarea:hover {
-  border: 2px solid #041827;
+  border: 1px solid #041827;
 }
 textarea:focus {
-  border: 2px solid #041827;
+  border: 1px solid #041827;
 }
 
 .phone-mask input[type=tel] {
@@ -2247,7 +2247,7 @@ textarea:focus {
   min-height: 50px;
   margin-left: auto;
   padding: 15px;
-  border: 2px solid #00b2ff;
+  border: 1px solid #00b2ff;
   border-radius: 3px;
   outline: none;
   -webkit-transition: border 0.3s ease;
@@ -2272,6 +2272,27 @@ textarea:focus {
 .custom-textarea label textarea::placeholder {
   color: #ffffff;
 }
+.custom-input label input:-webkit-autofill,
+.custom-input label textarea:-webkit-autofill,
+.custom-textarea label input:-webkit-autofill,
+.custom-textarea label textarea:-webkit-autofill {
+  background-color: rgba(20, 39, 38, 0.15);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.custom-input label input:-webkit-autofill, .custom-input label textarea:-webkit-autofill, .custom-textarea label input:-webkit-autofill, .custom-textarea label textarea:-webkit-autofill {
+  background-color: rgba(20, 39, 38, 0.15);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.custom-input label input:autofill,
+.custom-input label textarea:autofill,
+.custom-textarea label input:autofill,
+.custom-textarea label textarea:autofill {
+  background-color: rgba(20, 39, 38, 0.15);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 @media screen and (max-width: 767px) {
   .custom-input label input,
 .custom-input label textarea,
@@ -2285,13 +2306,13 @@ textarea:focus {
 .custom-input label textarea:hover,
 .custom-textarea label input:hover,
 .custom-textarea label textarea:hover {
-  border: 2px solid #041827;
+  border: 1px solid #041827;
 }
 .custom-input label input:focus,
 .custom-input label textarea:focus,
 .custom-textarea label input:focus,
 .custom-textarea label textarea:focus {
-  border: 2px solid #041827;
+  border: 1px solid #041827;
 }
 .custom-input__error,
 .custom-textarea__error {
@@ -2313,7 +2334,7 @@ textarea:focus {
 .custom-input.is-invalid textarea,
 .custom-textarea.is-invalid input,
 .custom-textarea.is-invalid textarea {
-  border: 2px solid #ff1553;
+  border: 1px solid #ff1553;
 }
 .custom-input.is-invalid input:focus, .custom-input.is-invalid input:hover,
 .custom-input.is-invalid textarea:focus,
@@ -2322,16 +2343,16 @@ textarea:focus {
 .custom-textarea.is-invalid input:hover,
 .custom-textarea.is-invalid textarea:focus,
 .custom-textarea.is-invalid textarea:hover {
-  border: 2px solid rgba(255, 21, 83, 0.5);
+  border: 1px solid rgba(255, 21, 83, 0.5);
 }
 .custom-input.is-valid input,
 .custom-textarea.is-valid input {
-  border: 2px solid #22b259;
+  border: 1px solid #22b259;
 }
 .custom-input.is-valid input:focus, .custom-input.is-valid input:hover,
 .custom-textarea.is-valid input:focus,
 .custom-textarea.is-valid input:hover {
-  border: 2px solid rgba(34, 178, 89, 0.5);
+  border: 1px solid rgba(34, 178, 89, 0.5);
 }
 .custom-input .input-message,
 .custom-textarea .input-message {
