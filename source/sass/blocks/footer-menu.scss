@@ -23,10 +23,6 @@
   }
 }
 
-.footer-menu__link {
-  color: $color-default-white;
-}
-
 .footer-menu__item:not(:last-child) {
   margin-bottom: 10px;
 
@@ -34,3 +30,9 @@
     margin-bottom: 14px;
   }
 }
+
+.footer-menu__link {
+  color: $color-default-white;
+}
+
+

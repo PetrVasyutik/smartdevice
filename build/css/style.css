@@ -922,6 +922,7 @@ a.header-contacts__email {
 .footer {
   background-color: #041827;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media (max-width: 767px) {
   .footer {
@@ -1067,10 +1068,6 @@ a.header-contacts__email {
   }
 }
 
-.footer-menu__link {
-  color: #ffffff;
-}
-
 .footer-menu__item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -1078,6 +1075,10 @@ a.header-contacts__email {
   .footer-menu__item:not(:last-child) {
     margin-bottom: 14px;
   }
+}
+
+.footer-menu__link {
+  color: #ffffff;
 }
 
 .social {
@@ -1672,6 +1673,11 @@ a.service img {
   background-color: #041827;
   border: none;
 }
+@media (max-width: 1023px) {
+  .accordion__button {
+    padding-left: 0;
+  }
+}
 @media (max-width: 767px) {
   .accordion__button {
     cursor: pointer;
@@ -1682,6 +1688,11 @@ a.service img {
 }
 .accordion__wrapper {
   padding: 10px;
+}
+@media (max-width: 1023px) {
+  .accordion__wrapper {
+    padding-left: 0;
+  }
 }
 
 .feedback {
@@ -2193,12 +2204,9 @@ textarea:focus {
   max-width: 50%;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-}
-@media (max-width: 1023px) {
-  .custom-input,
-.custom-textarea {
+  /*@media (max-width: 1023px) {
     padding-bottom: 20px;
-  }
+  }*/
 }
 @media screen and (max-width: 767px) {
   .custom-input,
