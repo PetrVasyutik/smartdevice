@@ -835,6 +835,8 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -851,6 +853,8 @@ address {
     padding-top: 5px;
     width: 50px;
     gap: 60px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
@@ -923,6 +927,11 @@ a.header-contacts__email {
   background-color: #041827;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+@media (max-width: 1023px) {
+  .footer {
+    padding-bottom: 0;
+  }
 }
 @media (max-width: 767px) {
   .footer {
@@ -1059,6 +1068,9 @@ a.header-contacts__email {
   -webkit-column-width: auto;
      -moz-column-width: auto;
           column-width: auto;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
 }
 @media (max-width: 1023px) {
   .footer-menu__list {
@@ -1074,6 +1086,14 @@ a.header-contacts__email {
 @media (max-width: 767px) {
   .footer-menu__item:not(:last-child) {
     margin-bottom: 14px;
+  }
+}
+.footer-menu__item:last-child {
+  margin-bottom: 60px;
+}
+@media (max-width: 1023px) {
+  .footer-menu__item:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -1095,6 +1115,8 @@ a.header-contacts__email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 15px;
 }
 @media (max-width: 1023px) {
@@ -1443,17 +1465,16 @@ a.header-contacts__email {
 
 .services__list {
   margin-top: 53px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 85px;
 }
 @media (max-width: 1023px) {
   .services__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
     gap: 30px;
     margin-top: 40px;
   }
@@ -1681,6 +1702,7 @@ a.service img {
 @media (max-width: 767px) {
   .accordion__button {
     cursor: pointer;
+    padding-left: 10px;
   }
   .accordion__button:hover {
     opacity: 0.8;
@@ -2095,19 +2117,21 @@ textarea:focus {
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-@media (hover: hover) {
-  .checkbox:hover:not(.focus-visible) {
-    opacity: 0.6;
-  }
-}
-.checkbox.focus-visible:focus {
+.checkbox:hover {
   opacity: 0.6;
+}
+.checkbox:focus {
+  color: red;
 }
 .checkbox [type=checkbox] {
   position: fixed;
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
           transform: scale(0);
+}
+.checkbox [type=checkbox]:focus-visible + .checkbox__mark {
+  background-color: #041827;
+  opacity: 0.8;
 }
 @media (max-width: 1023px) {
   .checkbox {
