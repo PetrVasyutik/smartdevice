@@ -91,6 +91,10 @@
     background-color: $black-pearl;
     border: none;
 
+    @media (max-width: 1023px) {
+      padding-left: 0;
+    }
+
     @media (max-width: 767px) {
       cursor: pointer;
 
@@ -102,5 +106,9 @@
 
   &__wrapper {
     padding: 10px;
+
+    @media (max-width: 1023px) {
+      padding-left: 0;
+    }
   }
 }
