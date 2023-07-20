@@ -35,21 +35,21 @@ margin-right: 40px;
 
 .header-contacts {
   width: 430px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 70px;
+  row-gap: 10px;
 
   @media (max-width: 1023px) {
     width: 60px;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 30px;
     padding-bottom: 35px;
   }
 
   @media (max-width: 767px) {
     padding-top: 5px;
     width: 50px;
-    gap: 60px;
-    flex-wrap: nowrap;
   }
 }
 
