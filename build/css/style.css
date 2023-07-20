@@ -1030,6 +1030,12 @@ a.header-contacts__email {
   }
 }
 
+@media (max-width: 767px) {
+  .footer-contacts__list {
+    margin-left: 10px;
+  }
+}
+
 .footer-contacts__item:not(:last-child) {
   margin-bottom: 10px;
 }
@@ -1077,6 +1083,11 @@ a.header-contacts__email {
     -webkit-column-count: 1;
        -moz-column-count: 1;
             column-count: 1;
+  }
+}
+@media (max-width: 767px) {
+  .footer-menu__list {
+    margin-left: 10px;
   }
 }
 
